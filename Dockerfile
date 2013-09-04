@@ -10,7 +10,7 @@ RUN apt-get update
 ADD http://nodejs.org/dist/v0.10.17/node-v0.10.17.tar.gz nodesrc/
 RUN (cd nodesrc ; tar -zxvf node-v0.10.17.tar.gz ; cd node-v0.10.17/ ; ./configure; make ; make install)
 
-CMD [ "/usr/bin/node", "-V" ]
+CMD [ "/usr/bin/node", "-v" ]
 
 EXPOSE 80
 
